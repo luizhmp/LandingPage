@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=0">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script type="text/javascript">
+window.onload = function(){
+	document.querySelector(".menuMobile").addEventListener("click", function(){
+		if(document.querySelector(".menu nav ul").style.display == 'flex'){
+			document.querySelector(".menu nav ul").style.display = 'none';
+		}else{
+			document.querySelector(".menu nav ul").style.display = 'flex';
+		}
+	});
+};
+</script>
+<title>Landing Page</title>
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="logo">
+			<a href="">
+				<img src="assets/images/logo.png">
+			</a>
+		</div>
+		<div class="menu">
+			<nav>
+				<div class="menuMobile">
+					<div class="mm_line"></div>
+					<div class="mm_line"></div>
+					<div class="mm_line"></div>
+				</div>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Forms & Signups</a></li>
+					<li><a href="">Features</a></li>
+					<li><a href="">Elements</a></li>
+					<li><a href="">Pages</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<section>
+	<div class="container">
+		<div class="description">
+			<div class="desc1">
+				<p><h1>It's time for better coffee!</h1></p>
+			</div>
+			<div class="desc2">
+				<p><h3>Preorder your powerful LeadX coffee machine now! Just signup with your email to get noticed!</h3></p>
+			</div>
+			<div class="desc3">
+				<p><h5>Your E-mail</h5></p>
+			</div>
+			<div class="desc_line"></div>
+			<a href="">
+				<div class="register">
+					<h5>REGISTER FOR PREORDER</h5>
+				</div>
+			</a>
+			<div class="desc4">
+				<span>*Preordered signups will be notified once the product is available</span>
+			</div>
+		</div>
+		<div class="product_image">
+			<img src="assets/images/product.png">
+		</div>
+	</div>
+</section>
+</body>
+</html>
